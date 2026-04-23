@@ -49,7 +49,7 @@ class BladeRenderer implements RendererContract
         });
 
         $this->viewFinder = new FileViewFinder($this->filesystem, $paths);
-        $this->viewFactory = new Factory($engineResolver, $this->viewFinder, null);
+        $this->viewFactory = new Factory($engineResolver, $this->viewFinder, new \Illuminate\Events\Dispatcher());
     }
 
     #[\Override]
