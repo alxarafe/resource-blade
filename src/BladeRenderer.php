@@ -38,6 +38,10 @@ class BladeRenderer implements RendererContract
         }
 
         $compiler = new BladeCompiler($this->filesystem, $cachePath);
+        
+        $compiler->directive('renderComponent', function ($expression) {
+            return "<?php echo \Alxarafe\ResourceBlade\ViewHelper::render(\$__env, {$expression}); ?>";
+        });
 
         $engineResolver = new EngineResolver();
         $engineResolver->register('blade', function () use ($compiler) {
