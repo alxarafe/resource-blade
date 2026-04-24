@@ -1,5 +1,11 @@
 # alxarafe/resource-blade
 
+> [!WARNING]
+> **DEPRECATED AND OBSOLETE**
+> 
+> This package has been deprecated and its functionality has been natively integrated into [**resource-controller**](https://github.com/alxarafe/resource-controller) via the `DefaultRenderer` and static HTML templates. 
+> You no longer need this package. Please remove it from your dependencies.
+
 ![PHP Version](https://img.shields.io/badge/PHP-8.2+-blueviolet?style=flat-square)
 ![CI](https://github.com/alxarafe/resource-blade/actions/workflows/ci.yml/badge.svg)
 ![Tests](https://github.com/alxarafe/resource-blade/actions/workflows/tests.yml/badge.svg)
